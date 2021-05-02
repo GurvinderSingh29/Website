@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body class="contactus">
+        <!--Header-->     
+        <div class="topnav" id="myTopnav">
+           <a href="html\index.html" >Home</a>
+           <a href="html\movies.html">Movies</a>
+           <a href="html\contact.html" class="active">Contact</a>
+           <a href="html\about.html">About</a>
+           <a href="html\hangman.html">Hangman</a>
+           </a>
+       </div>
+       <!--Header ends-->     
+       <!--Main form-->
+   <div class="row" >
+       
+       <div class="column middle"> 
+           <form action="" method="POST" onsubmit="thankYou()">
+               <div class="container">
+                   <h1>Contact Us!</h1>
+                   <p>Fill this form to create an account.</p>
+                   <hr>
+                   <label for="email"><b>Email:</b></label>
+                   <input type="email" placeholder="Enter Your Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                   
+                   <label for="add"><b>Address:</b></label>
+                   <input type="address" placeholder="Enter Your Address" name="add" id="add" required>
+                   
+                   <label for="phn-no"><b> Phone Number: </b></label>
+                   <input type="tel" placeholder="Enter Your Phone Number" name="Phone Number" id="phn-no" pattern="[7-9]{1}[0-9]{9}" title="enter a valid phone number">
+                 <br>   
+                 <hr>
+                  <label><b>Want to leave a feedback?</b></label><br><br>
+                   Yes <input type="radio" checked="checked" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"> 
+                   No  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">
+                   
+                   <div id="ifYes">
+                       <h1>Your Feedback Matters!</h1>
+                       
+                       <label><b>What caught your attention?</b></label><br><br>
+                       <input type="checkbox" id="movie" name="Movie" value="Movie">
+                       <label for="movie"> Movie</label><br>
+                       <input type="checkbox" id="play" name="play" value="play">
+                       <label for="play">Play</label><br>
+                       <input type="checkbox" id="show" name="show" value="show">
+                       <label for="show">Show</label><br>
+                       <input type="checkbox" id="concert" name="concert" value="concert">
+                       <label for="concert">Concert</label><br><br>
+                       
+                       <label for="Outlets"><b>Select the Outlet</b></label><br><br>
+                       <input list="Outlets" name="outlets">
+                       <datalist id="Outlets">
+                           <option value="Khar">
+                           <option value="Ghatkopar">
+                           <option value="Thane">
+                           <option value="Bandra">
+                           <option value="Kalyan">
+                       </datalist>
+                           <br><br>
+               
+                           <label for="cust-review"><b>Leave a Review!</b></label>
+                           <textarea placeholder="Your Review Matters" name="cust-review"></textarea>
+                           <hr>
+                   </div>        
+                   <button type="submit" id="register"  class="registerbtn">Register</button>
+               </div>
+           </form> 
+       </div>
+       <div class="column side">
+           <div class="map">
+               <h1 class="wrapper">Come See Us!</h1>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41266661.933523476!2d-130.20948844200163!3d50.85492169779693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sin!4v1619892310812!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" ></iframe>
+
+           </div>
+      </div> 
+   </div>
+   </div>
+     
+<!--Main form ends-->
+
+
+
+<!--Footer-->    
+<footer>
+   <div class="footer">
+   <div class="row">
+   <div class=" footer contact column side">
+       <p class="heading">Come See Us!</p>
+       <address>XYZ University<br>
+               Canada
+       </address>
+   </div>
+   
+   <div class="column middle footer links">
+       <p class="heading">Quick Links</p>
+       <li>
+           <a href="html\index.html">Home</a>
+       </li>
+       <li>
+           <a href="html\about.html">About Us</a>
+       </li>
+       <li>
+           <a href="html\movies.html">Movie List</a>
+       </li>
+       <li>
+           <a href="html\contact.html">Contact Us</a>
+       </li>    
+   
+   </div>
+   
+   <div class=" footer connect column side">
+       <p class="heading">Connect with us</p>
+       <i>
+           <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
+           <i class="fab fa-facebook">  Gurvinder</i><br>
+
+       </i>
+   </div>
+   </div>
+  
+</div>
+</footer>
+   <!--Footer ends--> 
+   </body>  
+   <script>
+   function yesnoCheck() 
+   {
+       if (document.getElementById('yesCheck').checked) 
+       {
+           document.getElementById('ifYes').style.visibility = 'visible';
+       }
+       else 
+       {
+           document.getElementById('ifYes').style.visibility = 'hidden';
+       }
+  }
+  </script>
+</body>
+</html>
