@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <base href="../">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/hangman.js"></script>
+</head>
+<body id="hangman">
+<!--Header-->     
+    <div class="topnav" id="myTopnav">
+        <a href="html\index.html" >Home</a>
+        <a href="html\movies.html">Movies</a>
+        <a href="html\contact.html">Contact</a>
+        <a href="html\about.html">About</a>
+        <a href="html\hangman.html" class="active">Hangman</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+        </a>
+    </div>
+<!--Header ends--> 
+
+<!--Hangman-->
+   <div class="column side"></div>
+        <div class="column middle"> 
+                <div class="container">
+                    <table>
+                        <tr><td colspan="2" align=right class=w2>No of rights:</td>
+                        <td><div id="demo" class = w2 align=left></div></td></tr>
+                    
+                        <tr><td rowspan="3"><div id=image1 ><img src="img/hang1.jpeg" width="200" height="300"></div></td>
+                        <td colspan="2"><div class = w1 id = "word"</div></td></tr>
+                    
+                        <tr><td colspan="2">
+                    
+                        <input class = w2 type="text" name="guessword" id = "guessword" disabled="disabled" placeholder="Enter letter">  
+                        </td>
+                        </tr>
+                    
+                        <tr>
+                        <td colspan="2">       
+                        <button class="button_game"  type="button" id="butt" onclick="game();">Click me to start Game!</button>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="column side"></div>
+        </div> 
+<!--Hangman ends-->
+<!--Footer-->    
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <div class=" footer contact column side">
+                <p class="heading">Come See Us!</p>
+                <address>XYZ University<br>
+                        Canada
+                </address>
+            </div>
+            
+            <div class="column middle footer links">
+                <p class="heading">Quick Links</p>
+                <li>
+                    <a href="html\index.html">Home</a>
+                </li>
+                <li>
+                    <a href="html\about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="html\movies.html">Movie List</a>
+                </li>
+                <li>
+                    <a href="html\contact.html">Contact Us</a>
+                </li>    
+            
+            </div>
+            
+            <div class=" footer connect column side">
+                <p class="heading">Connect with us</p>
+                <i>
+                    <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
+                    <i class="fab fa-facebook">  Gurvinder</i><br>
+    
+                </i>
+            </div>
+            </div>
+           
+        </div>
+        </footer>
+    <!--Footer ends-->  
+   
+</body>
+</html>
