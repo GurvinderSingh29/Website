@@ -1,63 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!--Header-->     
-<div class="topnav" id="myTopnav">
-    <a href="html\index.html" >Home</a>
-    <a href="html\movies.html">Movies</a>
-    <a href="html\contact.html">Contact</a>
-    <a href="html\about.html" class="active">About</a>
-    <a href="html\hangman.html">Hangman</a>
-</div>
-<!--Header ends-->    
-
-
-        <!--Footer-->    
-        <footer>
-            <div class="footer">
-            <div class="row">
-            <div class=" footer contact column side">
-                <p class="heading">Come See Us!</p>
-                <address>XYZ University<br>
-                        Canada
-                </address>
-            </div>
-            
-            <div class="column middle footer links">
-                <p class="heading">Quick Links</p>
-                <li>
-                    <a href="html\index.html">Home</a>
-                </li>
-                <li>
-                    <a href="html\about.html">About Us</a>
-                </li>
-                <li>
-                    <a href="html\movies.html">Movie List</a>
-                </li>
-                <li>
-                    <a href="html\contact.html">Contact Us</a>
-                </li>    
-            
-            </div>
-            
-            <div class=" footer connect column side">
-                <p class="heading">Connect with us</p>
-                <i>
-                    <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
-                    <i class="fab fa-facebook">  G&L</i><br>
-    
-                </i>
-            </div>
-            </div>
-           
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <base href="..\">
+        <link href="css\\main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7e124143b4.js" crossorigin="anonymous"></script>
+        <title>Home</title>
+    </head>
+    <body>
+        
+       <!--Header-->     
+        <div class="topnav" id="myTopnav">
+            <a href="html\index.html" class="active">Home</a>
+            <a href="html\movies.html">Movies</a>
+            <a href="html\contact.html">Contact</a>
+            <a href="html\about.html">About</a>
+            <a href="html\hangman.html">Hangman</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+            </a>
         </div>
-        </footer>
+        <!--Header ends-->     
+<!--Slider-->     
+    <div class="slideshow-container-main">
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img\\img1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\\img2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\\img3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\\img4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\\img5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\\img6.jpg" style="width:100%">
+        </div>
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <script src="js\\slideshow.js"></script>
+    </div>     
+
+<!--Main Area-->
+        <div class="movies" style="background-color: #f1f1f1;">
+            <h1 class="heading">Movies on air...</h1>
+        <div class="row">
+            <script src="js\script.js"></script>
+        <div class="column side"> 
+        <div id="movie_buy">
+          <img class="movie_m" src="img/imgm1.jpg" class="">
+          <p >Khamoshiyan</p>
+          <p> Kabir is a struggling writer went to Kashmir and staying at a mysterious guest house, falls in love with Meeera, the guesthouse owner.</p>
+          <p>Releasing: 5th May,2021</p>
+          <button  onclick="proceedToCart('5th May,2021','Khamoshiyan')" id="buy">Book Now!</button>
+          </div>
+        </div>
+          <div class="column side"> 
+        
+        <div id="movie_buy">
+          <img class="movie_m" src="img/imgm3.jpg" class="">
+          <p >Angrezi Medium</p>
+          <p>The daughter dream of going to London for studies,he done everything what he can do.</p>
+          <p>Releasing: 17th May,2021</p>
+          <button  onclick="proceedToCart('17th May,2021','Angrezi Medium')" id="buy">Book Now!</button>
+          </div>
+        </div>  
+        
+        <div class="column side"> 
+        <div id="movie_buy">
+          <img class="movie_m" src="img/imgm4.jpg" class="">
+          <p >The Big Bull</p>
+          <p > Harshad Mehta story about scam 1992, a real event story of stock market.<br><br></p>
+          <p>Releasing: 17th May,2021</p>
+          <button  onclick="proceedToCart('17th May,2021','The Big Bull')" id="buy">Book Now!</button>
+          </div>
+        </div>
+         
+        <div class="column side"> 
+        <div id="movie_buy">
+          <img class="movie_m" src="img/imgm2.jpg" class="">
+          <p>Roohi</p>
+          <p>Two pals kidnap a bride, gets in trouble, one fall for possessing her.<br><br></p>
+          <p>Releasing: 21st May,2021</p>
+          <button  onclick="proceedToCart('21st May,2021','Roohi')" id="buy">Book Now!</button>
+          </div>
+        </div>
+        </div>
+        </div>
+<!--Main Area Ends-->
+
+<!--Movie Trailers-->     
+        <div class="movies">
+            <br><h1 class="heading">Movie Trailers...</h1>
+            <iframe class=" trailer  " src="https://www.youtube.com/embed/u5r77-OQwa8"></iframe>
+            <iframe class="trailer" src="https://www.youtube.com/embed/i37xLxNM9pY" ></iframe>
+             <iframe class="trailer" src="https://www.youtube.com/embed/PtFY3WHztZc"></iframe>
+             <iframe class="trailer" src="https://www.youtube.com/embed/LE8-4aRf5VQ" ></iframe>
+        </div>
+<!--Movie Trailers ends--> 
+
+<!--Footer-->    
+        <footer>
+        <div class="footer">
+        <div class="row">
+        <div class=" footer contact column side">
+            <p class="heading">Come See Us!</p>
+            <address>Cegepgim<br>
+                    Canada
+            </address>
+        </div>
+        
+        <div class="column middle footer links">
+            <p class="heading">Quick Links</p>
+            <li>
+                <a href="html\index.html">Home</a>
+            </li>
+            <li>
+                <a href="html\about.html">About Us</a>
+            </li>
+            <li>
+                <a href="html\movies.html">Movie List</a>
+            </li>
+            <li>
+                <a href="html\contact.html">Contact Us</a>
+            </li>    
+        
+        </div>
+        
+        <div class=" footer connect column side">
+            <p class="heading">Connect with us</p>
+            <i>
+                <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
+                <i class="fab fa-facebook">  GurvinderLovepreet</i><br>
+
+            </i>
+        </div>
+        </div>
+       
+    </div>
+    </footer>
 <!--Footer ends--> 
 </body>
 </html>
