@@ -1,73 +1,95 @@
- <!--Header-->     
- <div class="topnav" id="myTopnav">
-    <a href="html\index.html" >Home</a>
-    <a href="html\movies.html">Movies</a>
-    <a href="html\contact.html">Contact</a>
-    <a href="html\about.html" class="active">About</a>
-    <a href="html\hangman.html">Hangman</a>
-    </a>
-</div>
-<!--Header ends-->     
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <base href="../">
+        <link href="css/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7e124143b4.js" crossorigin="anonymous"></script>
+        <title>About Us</title>
+    </head>
+    <body>
+        
+         <!--Header-->     
+         <div class="topnav" id="myTopnav">
+            <a href="html\index.html" >Home</a>
+            <a href="html\movies.html">Movies</a>
+            <a href="html\contact.html">Contact</a>
+            <a href="html\about.html" class="active">About</a>
+            <a href="html\hangman.html">Hangman</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!--Header ends-->     
 
 <!--About us-->
-<div class="row"> 
-<div class="column middle"> 
-<h2>About Us!</h2>
-<p>
-welcome to online booking website.
-</span>
-</p>
-<button onclick="readmore()" id="myBtn">Read more</button>
+<div class="row">
+    <script src="js\script.js"> </script> 
+    <div class="column middle"> 
+      <h2>About Us!</h2>
+      <p>
+        Welcome to our movies tickets booking website. You can easily book your ticket as we worked upon improvisingthe experiences and technology.
+        Users have free access and helps you to know and buy upcoming new movies. You can simply book tickets anywhere by this website.
+        The user can share their contact information and feedback to our website. User can buy tickets through cart and gets unique Login id and password
+        to access live streaming.
+        <span id="dots">...</span><span id="more">
+        To entertain our users, You can play hangman game and get experience of it. The website main moto is to watch live streaming movies 
+        from anywhere.
+        </span>
+      </p>
+    <button onclick="readmore()" id="myBtn">Read more</button>
 
+    </div>
+    <div class="column middle">
+      <img src="img/movie.jpg" class="about-image">
+    </div>
+        
 </div>
-<div class="column middle">
-</div>
 
-</div>
-
-
+      
 
 <!--About us Ends-->
-<!--Footer-->    
-<footer>
-    <div class="footer">
-    <div class="row">
-    <div class=" footer contact column side">
-        <p class="heading">Come See Us!</p>
-        <address>XYZ University<br>
-                Canada
-        </address>
-    </div>
+        <!--Footer-->    
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <div class=" footer contact column side">
+                <p class="heading">Come See Us!</p>
+                <address>Cegepgim<br>
+                        Canada
+                </address>
+            </div>
+            
+            <div class="column middle footer links">
+                <p class="heading">Quick Links</p>
+                <li>
+                    <a href="html\index.html">Home</a>
+                </li>
+                <li>
+                    <a href="html\about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="html\movies.html">Movie List</a>
+                </li>
+                <li>
+                    <a href="html\contact.html">Contact Us</a>
+                </li>    
+            
+            </div>
+            
+            <div class=" footer connect column side">
+                <p class="heading">Connect with us</p>
+                <i>
+                    <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
+                    <i class="fab fa-facebook">  GurvinderLovepreet</i><br>
     
-    <div class="column middle footer links">
-        <p class="heading">Quick Links</p>
-        <li>
-            <a href="html\index.html">Home</a>
-        </li>
-        <li>
-            <a href="html\about.html">About Us</a>
-        </li>
-        <li>
-            <a href="html\movies.html">Movie List</a>
-        </li>
-        <li>
-            <a href="html\contact.html">Contact Us</a>
-        </li>    
-    
-    </div>
-    
-    <div class=" footer connect column side">
-        <p class="heading">Connect with us</p>
-        <i>
-            <i class="fas fa-at"><a>  admin@demo.com</a></i><br><br>
-            <i class="fab fa-facebook">  G&L</i><br>
-
-        </i>
-    </div>
-    </div>
-   
-</div>
-</footer>
+                </i>
+            </div>
+            </div>
+           
+        </div>
+        </footer>
 <!--Footer ends--> 
 </body>
 </html>
